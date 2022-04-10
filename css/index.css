@@ -42,7 +42,7 @@
     align-items: center;
     max-width: 1024px;
     margin: auto;
-    /* padding: var(--padding-container); */
+    padding: var(--padding-container);
 }
 
 .header-nav__logo-container{
@@ -63,7 +63,7 @@
 }
 
 .header-nav__menu-icon-label:hover{
-    font-size: 2.5rem;
+    box-shadow: 0 0 1rem 0 var(--primary-highlight);
 }
 
 .header-nav__menu-icon-checkbox{
@@ -71,12 +71,12 @@
 }
 
 .header-nav__menu-icon-checkbox:checked+.header-nav__menu-link-list{
-    top: 10rem;
+    bottom: calc(100% - 20.28rem);
 }
 
 .header-nav__menu-link-list{
     position: fixed;
-    top: -10rem;
+    bottom: 100%;
     display: flex;
     list-style: none;
     flex-direction: column;
@@ -90,4 +90,27 @@
 }
 
 .header-nav__menu-link-item{}
-.header-nav__menu-link{}
+
+.header-nav__menu-link{
+    font-size: 1.25rem;
+}
+
+@media(min-width:854px){
+    .header-nav__menu-icon-label{
+        display: none;
+    }
+
+    .header-nav__menu-link-list{
+        position: static;
+        display: flex;
+        flex-direction: row;
+        list-style: none;
+        align-items: center;
+        justify-content: space-between;
+        gap: 2rem;
+        width: 100%;
+        background-color: var(--primary-shadow-color);
+        padding: 0;
+        margin: 0;
+    }
+}
