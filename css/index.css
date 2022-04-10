@@ -91,13 +91,27 @@
 }
 
 .header-nav__menu-link-item{
-    background-color: var(--button-color);
-    border-radius: 1rem;
 }
 
 .header-nav__menu-link{
+    background-color: var(--button-color);
+    border-radius: 1rem;
     font-size: 1.25rem;
     color: var(--text-color);
+    text-decoration: none;
+    transition: var(--all-transitions);
+}
+
+.header-nav__menu-link:hover{
+    position: relative;
+    background-color: var(--secondary-shadow-color);
+    color: var(--secondary-theme-color);
+}
+
+.header-nav__menu-link-item:hover::after{
+    content: '👈';
+    position: absolute;
+    transition: var(--all-transitions);
 }
 
 @media(min-width:854px){
