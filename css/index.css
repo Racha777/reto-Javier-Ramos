@@ -114,3 +114,55 @@
         margin: 0;
     }
 }
+
+.main{
+    background-color: var(--secondary-theme-color);
+}
+
+.main-container{
+    max-width: 1024px;
+    margin: auto;
+    padding: var(--padding-container);
+}
+
+.main-formulario{
+    padding: 0.5em 0;
+}
+
+.main-formulario-container{
+    max-width: 1024px;
+    margin: auto;
+    padding: var(--padding-container);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+    background-color: var(--primary-shadow-color);
+    border-radius: 2rem;
+}
+
+.main-formulario__titulo{
+    margin: 0;
+}
+
+.main-formulario__item-list{
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    gap: 0.5rem;
+}
+
+.main-formulario__item{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1.5rem;
+}
+
+.main-formulario__label{}
+
+.main-formulario__input{
+    height: 1rem;
+}
