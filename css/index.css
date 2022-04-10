@@ -7,6 +7,7 @@
     --shadow-color: #8888;
     --button-color: #61dafb;
     --button-color-active: #fff;
+    --table-border-color:#000;
     --button-text-color: #000;
     --primary-highlight: #61dafb;
     --secondary-highlight: #ffd700;
@@ -89,10 +90,14 @@
     transition: var(--all-transitions);
 }
 
-.header-nav__menu-link-item{}
+.header-nav__menu-link-item{
+    background-color: var(--button-color);
+    border-radius: 1rem;
+}
 
 .header-nav__menu-link{
     font-size: 1.25rem;
+    color: var(--text-color);
 }
 
 @media(min-width:854px){
@@ -119,12 +124,6 @@
     background-color: var(--secondary-theme-color);
 }
 
-.main-container{
-    max-width: 1024px;
-    margin: auto;
-    padding: var(--padding-container);
-}
-
 .main-formulario{
     padding: 0.5em 0;
 }
@@ -143,6 +142,7 @@
 
 .main-formulario__titulo{
     margin: 0;
+    font-weight: 700;
 }
 
 .main-formulario__item-list{
@@ -165,4 +165,54 @@
 
 .main-formulario__input{
     height: 1rem;
+}
+
+.main-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 1024px;
+    margin: auto;
+    padding: var(--padding-container);
+    background-color: var(--primary-shadow-color);
+    border-radius: 2rem;
+}
+
+.main-tabla{
+    padding: 0.5em 0;
+    border: 2px solid var(--table-border-color);
+    border-collapse: collapse;
+}
+
+.main-tabla__titulo{
+    font-weight: bold;
+    text-align: center;
+}
+
+.main-tabla__fila-encabezados{
+}
+
+.main-tabla__encabezado{
+    border: 2px solid var(--table-border-color);
+    border-collapse: collapse;
+}
+
+.main-tabla-filaProducto{
+    border: 2px solid var(--table-border-color);
+    border-collapse: collapse;
+}
+
+.filaProducto__Producto{
+}
+
+.filaProducto__Caracteristicas{
+}
+
+.filaProducto__Presentacion{
+}
+
+.filaProducto__Precio{
+}
+
+.filaProducto__Promocion{
 }
