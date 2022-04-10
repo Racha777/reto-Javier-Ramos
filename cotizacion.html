@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Cotizacion</title>
+    <link rel="stylesheet" href="./css/index.css">
+</head>
+<body class="body">
+    <header class="header">
+        <nav class="header-nav">
+            <div class="header-nav-container">
+                <a href="./index.html" class="header-nav__link">
+                    Volver al inicio
+                </a>
+            </div>
+        </nav>
+    </header>
+    <main class="main">
+        <p class="psudocodigo">
+            Algoritmo ordendecomida
+	Definir tipoComida Como Entero;
+	Definir platillo Como Entero;
+	
+	Escribir 'Desea comer carne(1) o pollo(2)';
+	Leer tipoComida;
+	
+	si(tipoComida==1) Entonces
+		Escribir 'Por favor elija 1 opcion: Seco con frejoles(1), Asado(2), Carapulcra(3)'
+		leer platillo;
+		
+		Segun platillo Hacer
+			1:
+				Escribir 'Usted elijio Seco con frejoles';
+			2:
+				Escribir 'Usted elijio Asado';
+			3:
+				Escribir 'Usted elijio Carapulcra';
+			De Otro Modo:
+				Escribir 'Eljia una opcion valida'
+		FinSegun
+	SiNo
+		si(tipoComida==2) Entonces
+			Escribir 'Por favor elija 1 opcion: Pollo al horno(1), Arroz con pollo(2), Pollo a la brasa(3)'
+			leer platillo;
+			
+			Segun platillo Hacer
+				1:
+					Escribir 'Usted elijio Pollo al horno';
+				2:
+					Escribir 'Usted elijio Arroz con pollo';
+				3:
+					Escribir 'Usted elijio Pollo a la brasa';
+				De Otro Modo:
+					Escribir 'Eljia una opcion valida'
+			FinSegun
+		SiNo
+			Escribir 'Seleccione una opcion valida'
+		FinSi
+	FinSi
+	
+	
+FinAlgoritmo
+        </p>
+        <img src="./img/psudocodigo.png" alt="Imagen del pseudocodigo" class="imagenPseudocodigo">
+    </main>
+</body>
+</html>
